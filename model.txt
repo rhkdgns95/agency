@@ -1,0 +1,67 @@
+# Entities
+
+enum FormStatus {
+	WAIT
+	ACCEPTED
+	REJECTED
+}
+enum UserLevel {
+	BOSS
+	EMPLOYEE
+}
+
+0)  Company(소속사)
+	- id		ID!
+	- name		String!
+	- boss		Boss
+	- entertainers	[Entertainer]
+	- createdAt	DateTime!
+	- updatedAt	DateTime!
+
+1) User(유저 - 사장 또는 직원)
+	- id		ID!
+	- email		Email!
+	- password	String!
+	- name		String!
+	- birthday	DateTime!
+	- chats		[Chat]
+	- level		UserLevel!
+	- company	Company
+	- createdAt	DateTime!
+	- updatedAt	DateTime!
+
+2)  Chat(채팅방)
+	- id		ID!
+	- boss		User!		# CEO
+	- entertainer	User!		#연예인
+	- messages	[Message]
+	- createdAt	DateTime!
+	- updatedAt	DateTime!
+
+3)  Message(메시지)
+	- id		ID!
+	- text		String!
+	- chat		Chat!
+	- receiver		User!
+	- sender		User!
+	- readAt		DateTime!
+	- updatedAt	DateTime!
+	- createdAt	DateTime!
+	
+4)  RegisterEmployeeForm(입사신청서)
+	- id		ID!
+	- text		String!		# 자기소개
+	- status		FormStatus!	# 상태(대기/수락/거절)
+	- employee	User!	 	# 신청인
+	- company	Company!	# 신청회사
+	- createdAt	DateTime!
+	- updatedAt	DateTime!
+	
+5)  RegisterCompanyForm(회사등록신청서)
+	- id		ID!
+	- text		String!		# 회사명시
+	- status		FormStatus!	# 상태(대기/수락/거절)
+	- employee	User!	 	# 신청인
+	- companyName	String!		# 새 회사명 등록
+	- createdAt	DateTime!
+	- updatedAt	DateTime!
