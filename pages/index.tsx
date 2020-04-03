@@ -6,11 +6,14 @@ interface IProps {
 
 const Home: NextPage<IProps> = ({
   title
-}) => (
+}) => {
+  console.log("TITLE: ", title);
+  return (
     <>
       {title}
     </>
   );
+}
 
 Home.getInitialProps = async (): Promise<IProps> => {
   return {

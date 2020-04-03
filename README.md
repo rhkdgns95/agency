@@ -44,6 +44,7 @@
   
 ## 2. Todo
 - [x] Init App.
+- [x] Dashboard.
 
 
 
@@ -51,7 +52,10 @@
 ```
 -	yarn add react react-dom next 
 -	yarn add typescript @types/react @types/node
--	
+-	yarn add @material-ui/core
+- yarn add @material-ui/icons
+- yarn add amplify
+
 ```
 
 ## 4. Study
@@ -61,6 +65,7 @@
 
 
 ## 5. Etc
+[Dashboard](https://github.com/mui-org/material-ui/blob/master/docs/src/pages/getting-started/templates/dashboard/Dashboard.js)
 ```
 
 ```
