@@ -1,23 +1,20 @@
 import { NextPage } from 'next';
+import { Dashboard } from '../templates/dashboard/Dashboard';
 
-interface IProps {
-  title: string
-}
-
-const Home: NextPage<IProps> = ({
+const Home: NextPage<IPageProps> = ({
   title
 }) => {
   console.log("TITLE: ", title);
   return (
-    <>
+    <Dashboard>
       {title}
-    </>
+    </Dashboard>
   );
 }
 
-Home.getInitialProps = async (): Promise<IProps> => {
+Home.getInitialProps = async (): Promise<IPageProps> => {
   return {
-    title: "HI"
+    title: "Index"
   };
 }
 

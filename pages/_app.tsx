@@ -3,8 +3,6 @@ import App from 'next/app';
 import Head from 'next/head';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-import { Dashboard } from '../templates/dashboard/Dashboard';
-
 export default class RootApp extends App {
     componentDidMount() {
         // Remove the server-side injected CSS.
@@ -22,9 +20,7 @@ export default class RootApp extends App {
                     <title>Static Website</title>
                 </Head>
                 <CssBaseline />
-                <Dashboard>
-                    <Component {...pageProps} />
-                </Dashboard>
+                <Component {...pageProps} />
             </>
         );
     }

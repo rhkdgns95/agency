@@ -45,7 +45,8 @@
 ## 2. Todo
 - [x] Init App.
 - [x] Dashboard.
-
+- [x] Page login / index using Dashboard layout.
+- [ ] Amplify
 
 
 ## 3. Install
