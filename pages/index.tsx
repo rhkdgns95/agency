@@ -1,20 +1,20 @@
 import { NextPage } from 'next';
+import { Layout } from '../components/Layout';
 
-interface IProps {
-  title: string
+const Home: NextPage<IPageProps> = ({
+  title
+}) => {
+  console.log("TITLE: ", title);
+  return (
+    <Layout>
+      {title}
+    </Layout>
+  );
 }
 
-const Home: NextPage<IProps> = ({
-  title
-}) => (
-    <>
-      {title}
-    </>
-  );
-
-Home.getInitialProps = async (): Promise<IProps> => {
+Home.getInitialProps = async (): Promise<IPageProps> => {
   return {
-    title: "HI"
+    title: "Index"
   };
 }
 

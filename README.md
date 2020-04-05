@@ -44,15 +44,20 @@
   
 ## 2. Todo
 - [x] Init App.
-- [ ] Amplify Component.
-- [ ] 
+- [x] Dashboard.
+- [x] Page login / index using Dashboard layout.
+- [ ] Amplify part 1 - amplify add api.
+- [ ] Amplify part 2 - amplify add auth.
 
 
 ## 3. Install
 ```
 -	yarn add react react-dom next 
 -	yarn add typescript @types/react @types/node
--	
+-	yarn add @material-ui/core
+- yarn add @material-ui/icons
+- yarn add amplify
+
 ```
 
 ## 4. Study
@@ -62,6 +67,9 @@
 
 
 ## 5. Etc
+[Dashboard](https://github.com/mui-org/material-ui/blob/master/docs/src/pages/getting-started/templates/dashboard/Dashboard.js)
+[AppSync](https://dev.classmethod.jp/articles/aws-appsync-re-introduction-2019-korean-ver/)
+[examples](https://aws.amazon.com/ko/amplify/console/getting-started/)
 ```
 
 ```

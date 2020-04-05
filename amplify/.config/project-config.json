@@ -1,0 +1,17 @@
+{
+    "projectName": "agency",
+    "version": "3.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "react",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "build",
+            "BuildCommand": "npm next build",
+            "StartCommand": "npm next start"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}

@@ -1,0 +1,31 @@
+enum FormStatus {
+	WAIT
+	ACCEPTED
+	REJECTED
+}
+enum UserLevel {
+	BOSS
+	EMPLOYEE
+}
+
+type Company @model {
+  id: ID!
+  name: String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+type Chat @model @auth(rules: [{ allow: owner, ownerField: "id" }]) {
+  id: ID!
+  messages: [Message] @connection(name: "ChatMessages")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+type Message @model @auth(rules: [{ allow: owner, ownerField: "id" }]){
+  id: ID!
+  text: String!
+  chat: Chat! @connection(name: "ChatMessages")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}

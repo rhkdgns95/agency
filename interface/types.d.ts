@@ -1,0 +1,3 @@
+interface IPageProps {
+    title: string;
+}
