@@ -53,11 +53,14 @@
 ## 3. Install
 ```
 -	yarn add react react-dom next 
--	yarn add typescript @types/react @types/node
+-	yarn add -D typescript @types/react @types/node
 -	yarn add @material-ui/core
 - yarn add @material-ui/icons
 - yarn add amplify
-
+- yarn add react-apollo apollo-boost
+- yarn add aws-amplify aws-amplify-react
+- yarn add -D @types/react-dom
+- yarn add react-apollo@2.5.8
 ```
 
 ## 4. Study
@@ -70,6 +73,7 @@
 [Dashboard](https://github.com/mui-org/material-ui/blob/master/docs/src/pages/getting-started/templates/dashboard/Dashboard.js)
 [AppSync](https://dev.classmethod.jp/articles/aws-appsync-re-introduction-2019-korean-ver/)
 [examples](https://aws.amazon.com/ko/amplify/console/getting-started/)
+[cognito](https://aws-amplify.github.io/amplify-js/api/classes/authclass.html)
 ```
 
 ```

@@ -2,114 +2,30 @@
 // eslint-disable
 // this is an auto generated file. This will be overwritten
 
-export const onCreateCompany = /* GraphQL */ `
-  subscription OnCreateCompany {
-    onCreateCompany {
+export const onCreatePost = /* GraphQL */ `
+  subscription OnCreatePost {
+    onCreatePost {
       id
-      name
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateCompany = /* GraphQL */ `
-  subscription OnUpdateCompany {
-    onUpdateCompany {
-      id
-      name
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteCompany = /* GraphQL */ `
-  subscription OnDeleteCompany {
-    onDeleteCompany {
-      id
-      name
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onCreateChat = /* GraphQL */ `
-  subscription OnCreateChat {
-    onCreateChat {
-      id
-      messages {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateChat = /* GraphQL */ `
-  subscription OnUpdateChat {
-    onUpdateChat {
-      id
-      messages {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteChat = /* GraphQL */ `
-  subscription OnDeleteChat {
-    onDeleteChat {
-      id
-      messages {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onCreateMessage = /* GraphQL */ `
-  subscription OnCreateMessage {
-    onCreateMessage {
-      id
+      title
       text
-      chat {
-        id
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
-export const onUpdateMessage = /* GraphQL */ `
-  subscription OnUpdateMessage {
-    onUpdateMessage {
+export const onUpdatePost = /* GraphQL */ `
+  subscription OnUpdatePost {
+    onUpdatePost {
       id
+      title
       text
-      chat {
-        id
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
-export const onDeleteMessage = /* GraphQL */ `
-  subscription OnDeleteMessage {
-    onDeleteMessage {
+export const onDeletePost = /* GraphQL */ `
+  subscription OnDeletePost {
+    onDeletePost {
       id
+      title
       text
-      chat {
-        id
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
     }
   }
 `;
