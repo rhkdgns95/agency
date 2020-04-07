@@ -7,8 +7,8 @@
         "config": {
             "SourceDir": "src",
             "DistributionDir": "build",
-            "BuildCommand": "npm next build",
-            "StartCommand": "npm next start"
+            "BuildCommand": "next build",
+            "StartCommand": "next start"
         }
     },
     "providers": [

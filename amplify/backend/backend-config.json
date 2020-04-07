@@ -1,9 +1,10 @@
 {
 	"auth": {
-		"agency72dec2ce": {
+		"agency3b899a9c": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
-			"dependsOn": []
+			"dependsOn": [],
+			"customAuth": false
 		}
 	},
 	"api": {
@@ -16,7 +17,7 @@
 					"defaultAuthentication": {
 						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
 						"userPoolConfig": {
-							"userPoolId": "authagency72dec2ce"
+							"userPoolId": "authagency3b899a9c"
 						}
 					}
 				}

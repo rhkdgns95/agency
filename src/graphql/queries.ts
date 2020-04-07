@@ -7,7 +7,12 @@ export const getPost = /* GraphQL */ `
     getPost(id: $id) {
       id
       title
-      text
+      userName
+      comments {
+        nextToken
+      }
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -21,7 +26,40 @@ export const listPosts = /* GraphQL */ `
       items {
         id
         title
-        text
+        userName
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;
+export const getComment = /* GraphQL */ `
+  query GetComment($id: ID!) {
+    getComment(id: $id) {
+      id
+      postId
+      userName
+      content
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listComments = /* GraphQL */ `
+  query ListComments(
+    $filter: ModelCommentFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listComments(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        postId
+        userName
+        content
+        createdAt
+        updatedAt
       }
       nextToken
     }

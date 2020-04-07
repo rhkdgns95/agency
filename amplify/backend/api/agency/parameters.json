@@ -4,7 +4,7 @@
     "DynamoDBEnableServerSideEncryption": "false",
     "AuthCognitoUserPoolId": {
         "Fn::GetAtt": [
-            "authagency72dec2ce",
+            "authagency3b899a9c",
             "Outputs.UserPoolId"
         ]
     }
